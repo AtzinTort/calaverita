@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+#myVideo {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.container {
+    z-index: 10000x;
+    max-width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    z-index: 10000x;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    z-index: 10000x;
+    width: 50%;
+    height: 300px;
+    background: url("imgs/CalaveraBlanca.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: cambioRojo;
+    animation-duration: 0.3s;
+    background-position: center;
+    animation-iteration-count:infinite ;
+    position: relative;
+    right: -20px;
+    
+
+}
+
+@keyframes cambioRojo {
+    0% {
+        width: 50%;
+        height: 300px;
+        background: url("imgs/CalaveraBlanca.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+
+    100% {
+        width: 50%;
+        height: 300px;
+        background: url("imgs/CalaveraRoja.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+        animation-direction: alternate;
+    }
+}
+
+
+
+h1 {
+    color: #ffffff;
+    z-index: 10;
+}
+
+.poema {
+    z-index: 10;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
